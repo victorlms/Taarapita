@@ -1,0 +1,28 @@
+Olá!
+
+Meus Parabens! Você acabou de obter o Projeto Taarapita!
+Sinceramente eu nem sei o que vc fará com isso, mas desejo que seja para evoluir propagar ainda mais esse tão belo desenvolvimento.
+
+Só que obter somente o projeto não é tudo, temos que preparar o ambiente para a execução do mesmo, então, vamos lá!
+
+Usamos Nodejs 8.9.3 e NPM 5.6.0
+
+Mas obtendo o ultimo pacote estavel de ambos servirá perfeitamente:
+
+Nodejs - https://nodejs.org/en/download/package-manager/
+
+após instalar o nodejs é só mandar no terminal(ou equivalente em seu sistema)
+
+#npm install npm@latest -g
+
+Ainda pelo o terminal, iremos para o local onde foi salva a pasta do projeto e instalaremos o electron:
+
+#npm install --global electron-download
+
+Agora, toda vez que quiser executar a janela do projeto execute:
+
+#npm start 
+
+ou
+
+#electron .
