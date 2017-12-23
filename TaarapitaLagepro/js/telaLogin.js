@@ -29,18 +29,21 @@ function fazendoLogin()
     );
     
     insert into login values(100, 'Vidal', '123');
+    insert into login values(200, 'Abreu', '123');
     
     Entendi que ele retorna um "vetor" de tuplas da tabela.
     
     No alert embaixo, ele imprime o atributo ID (mesmo nome da tabela) na posição 0 das tuplas que retornaram.
     No caso, ele retornou apenas uma tupla.
-        
-    O que não consegui fazer foi incluir as variaveis email e senha para a query abaixo.
+    
+    $1::text e $2::text são posições naquela string onde não entrar as variáveis (ou simplesmente conteúdo) que estão
+    explicidadas dentro dos colchetes.
+    
     */
-    client.query('SELECT * FROM login', (err, res) => { 
+
+    client.query('SELECT * FROM login WHERE email = $1::text AND senha = $2::text', [email, senha] ,(err, res) => { 
         alert("ID: " + res.rows[0].id)
-        alert("Total de tuplas da consulta": " + res.rowCount)
-        client.end();
+        alert("Total de tuplas da consulta: " + res.rowCount)
     })
 
 }
