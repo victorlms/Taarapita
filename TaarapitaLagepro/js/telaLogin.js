@@ -5,7 +5,7 @@ function fazendoLogin()
 	var email = document.getElementById('email').value;
 	var senha = document.getElementById('senha').value;
 
-    const { Client } = require('pg')
+    const { Client } = require('pg');
 
     const client = new Client({
       user: 'postgres',
@@ -13,8 +13,8 @@ function fazendoLogin()
       database: 'postgres',
       password: '123',
       port: 5432,
-    })
-    client.connect()
+    });
+    client.connect();
 
     /*Antes de tudo: npm install pg
     Isso instala o node-postgres
@@ -40,10 +40,9 @@ function fazendoLogin()
     explicidadas dentro dos colchetes.
     
     */
-
     client.query('SELECT * FROM login WHERE email = $1::text AND senha = $2::text', [email, senha] ,(err, res) => { 
         alert("ID: " + res.rows[0].id)
         alert("Total de tuplas da consulta: " + res.rowCount)
-    })
+    });
 
 }
