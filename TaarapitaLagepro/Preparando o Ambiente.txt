@@ -9,7 +9,9 @@ Usamos Nodejs 8.9.3 e NPM 5.6.0
 
 Mas obtendo o ultimo pacote estavel de ambos servirá perfeitamente:
 
-Nodejs - https://nodejs.org/en/download/package-manager/
+Nodejs  > https://nodejs.org/en/download/package-manager/
+	> https://www.ubuntuupdates.org/
+
 
 após instalar o nodejs é só mandar no terminal(ou equivalente em seu sistema)
 
@@ -18,6 +20,12 @@ após instalar o nodejs é só mandar no terminal(ou equivalente em seu sistema)
 Ainda pelo o terminal, iremos para o local onde foi salva a pasta do projeto e instalaremos o electron:
 
 #npm install --global electron-download
+
+Agora instalaremos o linker do banco de dados(no caso o postgres) com o electron
+
+#npm install pg
+
+obs.: ele só funciona se instalado localmente, por isso a necessidade de estar no diretorio do projeto
 
 Agora, toda vez que quiser executar a janela do projeto execute:
 
