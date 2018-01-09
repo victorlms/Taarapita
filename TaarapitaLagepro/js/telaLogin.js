@@ -1,3 +1,4 @@
+const main = require('main.js');
 
 //https://stackoverflow.com/questions/9205496/how-to-make-connection-to-postgres-via-node-js
 function fazendoLogin()
@@ -43,6 +44,7 @@ function fazendoLogin()
     client.query('SELECT * FROM login WHERE email = $1::text AND senha = $2::text', [email, senha] ,(err, res) => { 
         alert("ID: " + res.rows[0].id)
         alert("Total de tuplas da consulta: " + res.rowCount)
+        main.win.exit(0);
     });
 
 }
