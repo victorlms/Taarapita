@@ -8,18 +8,16 @@ const path = require('path')
 const url = require('url')
 
 const statusWindow = {login :'login.html', index:'index.html'}
-var screen = statusWindow.index;
+var screen = statusWindow.login;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 var win;
 
-var testando = require('./telaLogin.js');
-
 function createWindow () 
 {
   // Create the browser window.
-  win = new BrowserWindow({width: 800, height: 600})
+  win = new BrowserWindow({width:800, height: 600})
 
   // and load the index.html of the app.
   win.loadURL(url.format({
@@ -61,12 +59,3 @@ app.on('activate', function () {
     createWindow()
   }
 })
-
-// In this file you can include the rest of your app's specific main process
-// code. You can also put them in separate files and require them here.
-function newTest()
-{
-  alert("Meus parabens");
-  
-  alert(testando.trocandoTela);
-}
