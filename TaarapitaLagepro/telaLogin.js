@@ -8,10 +8,10 @@ function fazendoLogin()
     const { Client } = require('pg');
 
     const client = new Client({
-      user: 'postgres',
+      user: 'taarapita',
       host: 'localhost',
-      database: 'postgres',
-      password: '123',
+      database: 'taarapita',
+      password: '632145',
       port: 5432,
     });
     client.connect();

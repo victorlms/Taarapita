@@ -1,9 +1,15 @@
 var userNome;
+/*
 var email = document.getElementById('email').value;
 var senha = document.getElementById('senha').value;
+*/
+
 
 function fazendoLogin()
 {
+    var email = document.getElementById('email').value;
+    var senha = document.getElementById('senha').value;
+    
     const { Client } = require('pg');
 
     const client = new Client({
