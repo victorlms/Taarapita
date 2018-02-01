@@ -8,7 +8,7 @@ const path = require('path')
 const url = require('url')
 
 const statusWindow = {login :'login.html', index:'index.html'}
-var screen = statusWindow.login;
+var screen = statusWindow.index;
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -59,3 +59,4 @@ app.on('activate', function () {
     createWindow()
   }
 })
+

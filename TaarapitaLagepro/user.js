@@ -1,4 +1,4 @@
-var userNome;
+var userNome = "Abreu";
 /*
 var email = document.getElementById('email').value;
 var senha = document.getElementById('senha').value;
@@ -51,3 +51,4 @@ function fazendoLogin()
     });
 
 }
+module.exports= {username: userNome};

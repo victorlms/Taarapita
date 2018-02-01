@@ -144,13 +144,7 @@ textarea {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-.color-theme{
-  color: #00997b;
-}
-.text-align{
-  text-align: center;
-  margin-top: 30%;
-}
+
 html {
   height: 100%;
   width: 100%;
@@ -209,6 +203,15 @@ h6 {
   font-size: 12px;
 }
 
+.color-theme{
+  color: #00997b;
+}
+.icon-user{
+  float: left;
+  margin-left: 15px;
+  margin-top: -8px;
+}
+
 .window {
   position: absolute;
   top: 0;
@@ -234,6 +237,7 @@ h6 {
 
 .text-center {
   text-align: center;
+  margin-top: 30%;
 }
 
 .text-right {
@@ -321,6 +325,14 @@ h6 {
 .sidebar {
   background-color: #f5f5f4;
 }
+.search-bar{
+  float:right;
+  margin-top:-45px;
+  padding-right: 5px;
+}
+.search-butoon{
+}
+
 
 .draggable {
   -webkit-app-region: drag;
@@ -528,7 +540,7 @@ h6 {
 }
 
 .toolbar {
-  height: 10%;
+  height: 55px;
   box-shadow: inset 0 1px 0 #f5f4f5;
   background-color: #e8e6e8;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e8e6e8), color-stop(100%, #d1cfd1));
@@ -547,7 +559,7 @@ h6 {
   border-bottom: 1px solid #c2c0c2;
 }
 .toolbar-header .title {
-  margin-top: 1px;
+  margin-top: 10px;
 }
 
 .toolbar-footer {
@@ -559,9 +571,10 @@ h6 {
   margin: 0;
   font-size: 32px;
   font-weight: 400;
-  text-align: center;
+  text-align: left;
   color: #555;
-  height: center;
+  padding-top: 2px;
+  padding-left: 10px;
 }
 
 .toolbar-borderless {

@@ -5,13 +5,33 @@
     <title>Taarapita</title>
     <link type="text/css" rel="stylesheet" href="css/photon.css"/>
      <script language="JavaScript" src="main.js"></script>
+     <script language="JavaScript" src="pesquisa.js"></script>
      <script language="JavaScript" src="user.js"></script>
   </head>
   <body>
-       
-      <header class="toolbar toolbar-header">
-        <h1 class="title">Photon</h1>
-      </header>
+      <div class="window">
+        <header class="toolbar toolbar-header"><!--Parte da Superior-->
+          <div>
+            <img src="icons/user.png" class="icon-user" width="50" height="50" alt="test">
+            <h1 class="title">Sr.
+              <script>
+                var user = require('./user.js')
+                  document.write(user.username)
+              </script>
+            </h1>
+          </div>
+            <div class="search-bar">
+              <input type="submit" value="Pesquisa" onclick="pesquisar();"> 
+              <input type="text" name="pesquisar" id="pesquisar">
+            </div>
+        </header>
+      <div class="window-content">
+        <div class="pane-group">
+          <div class="pane-sm sidebar">Esquerda</div><!--Parte da esqueda -->
+          <div class="pane">Direita</div><!--Parte da Direita -->
+        </div>
+      </div>
+    </div>
     <script>
       // You can also require other files to run in this process
       require('./renderer.js')
