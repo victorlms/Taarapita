@@ -204,39 +204,36 @@ h6 {
 }
 ul {
     margin: 0;
-    padding-left: 5px;
+    padding: 0;
     list-style: none;
     width: 25px;
    
-  }
-  ul li {
+}
+ul li {
   position: relative;
-  }
-  li ul {
+}
+li ul {
   position: relative;
-  left: 15px;
+  left: 25px;
   top: 0;
   display: none;
-  }
-  ul li a {
-  display: block;
-  text-decoration: none;
+}
+ul li a {
+  display: list-item;
+  text-decoration-line: none;
+  text-align: center;
   color: #000;
-  padding: 5px;
+  border-radius: 6px 15px;
+  background:  #777;
+  padding:4px;
   border: none;
   width: 100px;
-  }
-  li:hover ul { display:block; }
-.gradienteCinzaParaDir{
-  background: linear-gradient(to right, #777,#e8e6e8);
+  height: 30px;
 }
-.gradienteCinzaParaEsq{
-  background: linear-gradient(to left, #777,#e8e6e8);
+li.listActive ul { 
+  display:list-item; 
 }
-.list-interactive {
-  display: list-item;
-  text-decoration-color: #00997b;
-}
+
 .color-theme{
   color: #00997b;
 }
