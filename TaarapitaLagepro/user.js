@@ -1,8 +1,7 @@
 var userNome = "Abreu";
-/*
-var email = document.getElementById('email').value;
-var senha = document.getElementById('senha').value;
-*/
+var email;
+var senha;
+
 
 
 function fazendoLogin()
