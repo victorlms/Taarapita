@@ -1,7 +1,7 @@
 function startList()
 {
 	var myList, node;
-
+	
 	myList = document.getElementById("myList");
 
 	for(var i=0; i < myList.childNodes.length;i++)
@@ -18,5 +18,6 @@ function startList()
 					this.className+="listActive";
 			}
 		}
+
 	}
 }

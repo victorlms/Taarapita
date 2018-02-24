@@ -19,7 +19,7 @@ após instalar o nodejs é só mandar no terminal(ou equivalente em seu sistema)
 
 Ainda pelo o terminal, iremos para o local onde foi salva a pasta do projeto e instalaremos o electron:
 
-#npm install --global electron-download
+#npm i -D electron@latest -g --save-dev --save-exact --unsafe-perm=true
 
 Agora instalaremos o linker do banco de dados(no caso o postgres) com o electron
 

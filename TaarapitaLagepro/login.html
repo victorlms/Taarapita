@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <title>Taarapita</title>
     <link type="text/css" rel="stylesheet" href="css/photon.css"/>
-    <script language="JavaScript" src="user.js"></script>
+    
   </head>
   <body>
-    
-   <form method="GET" class="text-center color-theme">
+    <script language="JavaScript" src="user.js"></script>
+    <script language="JavaScript" src="main.js"></script>
+   <form method="GET" id="login" class="text-center color-theme login">
      EMAIL: 
-     <input type="text" name="email" id="email" ><br><br>
+    <input type="text" name="Email" id="email" ><br><br>
      SENHA:
-     <input type="text" name="senha" id="senha" ><br><br>
-    <input type="submit" value="Enviar" onclick="fazendoLogin();"> 
+    <input type="text" name="Senha" id="senha" ><br><br>
+    <input type="submit" value="Enviar" id="enviar" onclick="fazendoLogin(document.getElementById('email').value, document.getElementById('senha').value);">
    </form>
 
     <script>
