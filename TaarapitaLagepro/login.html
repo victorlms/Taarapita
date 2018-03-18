@@ -1,25 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Taarapita</title>
-    <link type="text/css" rel="stylesheet" href="css/photon.css"/>
-    
-  </head>
-  <body>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="http://getbootstrap.com.br/favicon.ico">
     <script language="JavaScript" src="user.js"></script>
     <script language="JavaScript" src="main.js"></script>
-   <form method="GET" id="login" class="text-center color-theme login">
-     EMAIL: 
-    <input type="text" name="Email" id="email" ><br><br>
-     SENHA:
-    <input type="text" name="Senha" id="senha" ><br><br>
-    <input type="submit" value="Enviar" id="enviar" onclick="fazendoLogin(document.getElementById('email').value, document.getElementById('senha').value);">
-   </form>
 
-    <script>
-      // You can also require other files to run in this process
-      require('./renderer.js')
-    </script>
-  </body>
+    <title>Taarapita</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/signin.css" rel="stylesheet">
+  </head>
+
+  <body class="text-center">
+    <form class="form-signin">
+      <img class="mb-4" src="icons/user.png" alt="" width="72" height="72">
+
+      <h1 class="h3 mb-3 font-weight-normal">Bem-vindo(a) ao Taarapita</h1>
+
+      <label for="inputEmail" class="sr-only">E-mail</label>
+        <input id="email" class="form-control" placeholder="E-mail" required="" autofocus="" type="email">
+
+      <label for="inputPassword" class="sr-only">Senha</label>
+        <input id="senha" class="form-control" placeholder="Senha" required="" type="password">
+      
+      <div class="checkbox mb-3">
+        <label>
+          <input value="remember-me" type="checkbox"> Lembre-se de mim
+        </label>
+      </div>
+
+      <button class="btn btn-lg btn-primary btn-block" type="submit" onclick="fazendoLogin(document.getElementById('email').value, document.getElementById('senha').value);">Entrar
+      </button>
+
+      <p class="mt-5 mb-3 text-muted">© 2017-2018</p>
+    </form>
+  
+
+</body>
+
 </html>

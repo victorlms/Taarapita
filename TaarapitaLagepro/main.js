@@ -30,7 +30,7 @@ function createWindow ()
     
   
   // Open the DevTools.
-  //win.webContents.openDevTools()
+  login.webContents.openDevTools()
   login.on('closed', function () {
     main.reload();
     main.show();
@@ -56,4 +56,4 @@ app.on('activate', function () {
     createWindow()
   }
 })
-module.exports = {LoginWin: login, MainWin:main}
+module.exports = {LoginWin: login, MainWin: main}
