@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Taarapita</title>
-    <link type="text/css" rel="stylesheet" href="css/photon.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/photon.css"/>
      <script language="JavaScript" src="../main.js"></script>
      <script language="JavaScript" src="../js/pesquisa.js"></script>
      <script language="JavaScript" src="../js/user.js"></script>
@@ -13,10 +13,10 @@
       <div class="window" id="desktop">
             <header class="toolbar toolbar-header"><!--Parte da Superior open-->
                 <div>
-                  <img src="icons/user.png" class="icon-user" width="50" height="50" alt="test">
+                  <img src="__dirname/../icons/user.png" class="icon-user" width="50" height="50" alt="test">
                   <h1 class="title">ID do User =>
                     <script>
-                      var userCod = require('./user.js')
+                      var userCod = require('__dirname/../js/./user.js')
                         document.write(userCod.User.nome);
                     </script>
                   </h1>
@@ -76,7 +76,7 @@
     </div>
     <script>
       // You can also require other files to run in this process
-      require('./renderer.js')
+      require('__dirname/../js/./renderer.js')
     </script>
   </body>
 </html>

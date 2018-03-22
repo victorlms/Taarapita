@@ -2,7 +2,7 @@ const {BrowserWindow,app} = require('electron')
 const path = require('path')
 const url = require('url')
 
-const statusWindow = {main:'../html/main.html',login :'../html/login.html'};
+const statusWindow = {main:'__dirname/../html/main.html',login :'__dirname/../html/login.html'};
 let login, main;
 
 function createWindow () 
@@ -30,7 +30,7 @@ function createWindow ()
     
   
   // Open the DevTools.
-  login.webContents.openDevTools()
+  //login.webContents.openDevTools()
   login.on('closed', function () {
     main.reload();
     main.show();
