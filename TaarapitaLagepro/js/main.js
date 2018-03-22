@@ -30,7 +30,7 @@ function createWindow ()
     
   
   // Open the DevTools.
-  login.webContents.openDevTools()
+// login.webContents.openDevTools()
   login.on('closed', function () {
     main.reload();
     main.show();
