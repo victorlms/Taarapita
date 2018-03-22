@@ -7,16 +7,19 @@
     "start": "electron ."
   },
   "repository": "https://github.com/matheusAbreu/Taarapita",
-  "keywords": [
-   
+  "keywords": [],
+  "author": [
+    "Abreu",
+    "Vidal",
+    "Victor"
   ],
-  "author": ["Abreu", "Vidal", "Victor"],
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "1.8.2"
   },
   "dependencies": {
     "electron-canvas-to-buffer": "^2.0.0",
+    "fs": "0.0.1-security",
     "pg": "^7.4.1"
   }
 }
