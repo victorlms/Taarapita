@@ -16,8 +16,13 @@
                   <img src="../icons/user.png" class="icon-user" width="50" height="50" alt="test">
                   <h1 class="title">ID do User =>
                     <script>
-                      var userCod = require('__dirname/../js/./user.js')
-                        document.write(userCod.User.nome);
+                      var userCod = require('../js/./user.js');
+                      var temp = userCod.LendoArq();
+
+                      var user = new userCod.User_Test(temp[0].id, temp[0].email, temp[0].senha);
+                      
+                        document.write(user.nome);
+                        document.write("<");
                     </script>
                   </h1>
                 </div>

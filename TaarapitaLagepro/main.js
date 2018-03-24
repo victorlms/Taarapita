@@ -3,7 +3,7 @@ const path = require('path')
 const url = require('url')
 
 const statusWindow = {main:'__dirname/../html/main.html',login :'__dirname/../html/login.html'};
-let login, main;
+var login, main;
 
 function createWindow () 
 {
@@ -15,33 +15,32 @@ function createWindow ()
     pathname: path.join(__dirname, statusWindow.login),
     protocol: 'file:',
   }))
-
-  main.loadURL(url.format({
-    pathname: path.join(__dirname, statusWindow.main),
-    protocol: 'file:',
-  }))
-
   login.setMenu(null)
-  main.setMenu(null)
   
   login.once('ready-to-show', ()=>{
         login.show();  
-  })
-    
-  
+  }) 
   // Open the DevTools.
   //login.webContents.openDevTools()
   login.on('closed', function () {
-    main.reload();
-    main.show();
-    login = null;
+    //Carregando o main só depois de fechar load
+      main.loadURL(url.format({
+      pathname: path.join(__dirname, statusWindow.main),
+      protocol: 'file:',
+      }));
+
+      main.setMenu(null);
+
+      main.once('ready-to-show', ()=>{
+            main.show();  
+      });
+
+        login = null;
   })
   main.on('closed', function(){
     main = null
   })
 }
-
-
 
 app.on('ready',createWindow)
 
