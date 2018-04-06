@@ -41,9 +41,9 @@ function UserTest(id, email, senha)
 function lendoArq()//Retorna as informações gravadas no arquivo
 {
   var temp;
-  var fs = require("fs");
+  var fs = require('fs');
 
-  temp = JSON.parse(fs.readFileSync("./resultado.json", 'utf8'));
+  temp = JSON.parse(fs.readFileSync('./resultado.json', 'utf8'));
 
   return temp;
 }

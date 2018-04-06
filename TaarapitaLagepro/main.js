@@ -21,7 +21,7 @@ function createWindow ()
         login.show();  
   }) 
   // Open the DevTools.
-  //login.webContents.openDevTools()
+  main.webContents.openDevTools()
   login.on('closed', function () {
     //Carregando o main só depois de fechar load
       main.loadURL(url.format({

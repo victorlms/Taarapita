@@ -74,21 +74,17 @@
                         </ul>
                   </div><!--Parte da esqueda Close-->
                   qUE?
-                  <script>
-                    var fs = require('fs');
-
-                    fs.readFile('TEST.txt', 'utf8', function(err,data){
-                        if(err) {
-                            alert("Could not open file: %s", err);
-                          
-                        }
-                      
-                      alert(data);
-                    });
-                  </script>
+                 
                   <div class="pane"><!--Parte da Direita Open-->
                     Direita
+                     <script>
+                    var test;
 
+                     test = require('../js/drawInToScreen.js').LoadHtml(__dirname+'/main_do_gui.html');
+
+                   document.write(test);
+                    
+                  </script>
                    
                   </div><!--Parte da Direita Close-->
                 </div>
@@ -96,7 +92,7 @@
     </div>
     <script>
       // You can also require other files to run in this process
-      require('__dirname/../js/./renderer.js')
+      require(__dirname+'/../js/./renderer.js')
     </script>
   </body>
 </html>
