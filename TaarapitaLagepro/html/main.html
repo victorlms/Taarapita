@@ -73,8 +73,23 @@
                           </li> 
                         </ul>
                   </div><!--Parte da esqueda Close-->
+                  qUE?
+                  <script>
+                    var fs = require('fs');
+
+                    fs.readFile('TEST.txt', 'utf8', function(err,data){
+                        if(err) {
+                            alert("Could not open file: %s", err);
+                          
+                        }
+                      
+                      alert(data);
+                    });
+                  </script>
                   <div class="pane"><!--Parte da Direita Open-->
                     Direita
+
+                   
                   </div><!--Parte da Direita Close-->
                 </div>
             </div>

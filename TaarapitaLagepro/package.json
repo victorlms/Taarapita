@@ -20,7 +20,7 @@
   "dependencies": {
     "electron-canvas-to-buffer": "^2.0.0",
     "fs": "0.0.1-security",
-    "npm": "^5.7.1",
+    "npm": "^5.8.0",
     "pg": "^7.4.1"
   }
 }

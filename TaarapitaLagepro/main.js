@@ -2,7 +2,7 @@ const {BrowserWindow,app} = require('electron')
 const path = require('path')
 const url = require('url')
 
-const statusWindow = {main:'__dirname/../html/main.html',login :'__dirname/../html/login.html'};
+const statusWindow = {main:'__dirname/../html/main.html',login :'__dirname/../html/main_do_gui.html'};
 var login, main;
 
 function createWindow () 
