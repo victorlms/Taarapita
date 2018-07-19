@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html   xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:f="http://java.sun.com/jsf/core"
+        
+        >
+    
+    <h:head>
+        <title>Cadastro</title>
+    </h:head>
+    
+<h:body>
+    <h:form>
+        <h:panelGrid columns="3">
+                <h:outputLabel value="Nome:"/>
+                <h:inputText id="nome" value="#{usuarioMB.usuario.nome}"  size="20" />
+                <h:message for="nome" />
+
+                <h:outputLabel value="Endereço:"/>
+                <h:inputText id="end" value="#{usuarioMB.usuario.endereco}" size="20" />
+                <h:message for="end" />
+
+                <h:outputLabel value="Número:"/>
+                <h:inputText id="nro" value="#{usuarioMB.usuario.numero}" size="20" />
+                <h:message for="nro" />
+
+                <h:outputLabel value="Telefone:"/>
+                <h:inputText id="tel" value="#{usuarioMB.usuario.telefone}" size="20" />
+                <h:message for="tel" />
+
+                <h:outputLabel value="Cidade:"/>
+                <h:inputText id="mun" value="#{usuarioMB.usuario.cidade}" size="20" />
+                <h:message for="mun" />
+
+                <h:commandButton id="btnE" value="Enviar" type="submit" action="#{usuarioMB.salvarUsuario}" />
+                <h:commandButton id="btnL" value="Limpar" type="submit" action="#{usuarioMB.limparCampo}"/>
+ 
+        </h:panelGrid>
+    </h:form>
+    
+    <h:form rendered="#{not empty usuarioMB.usuarioLista}">
+        <h:panelGrid>
+            <h:dataTable id="tableDeUsuarios" value="#{usuarioMB.getUsuarioLista()}" var="u" title="Usuario Cadastradas" >
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="NOME" />
+                    </f:facet>
+                    <h:outputText value="#{u.nome}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="ENDERECO" />
+                    </f:facet>
+                    <h:outputText value="#{u.endereco}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="NUMERO" />
+                    </f:facet>
+                    <h:outputText value="#{u.numero}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="TELEFONE" />
+                    </f:facet>
+                    <h:outputText value="#{u.telefone}"/>
+                </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="CIDADE" />
+                    </f:facet>
+                    <h:outputText value="#{u.cidade}"/>
+                </h:column>
+                <h:column>
+                    <h:commandButton value="Editar" action="#{usuarioMB.editUsuario(u)}" />
+                </h:column>
+                <h:column>
+                    <h:commandButton value="Remover" action="#{usuarioMB.removeUsuario(u)}"/>
+                </h:column>
+            </h:dataTable>
+        </h:panelGrid>
+    </h:form>
+    
+ </h:body>
+</html>
