@@ -9,6 +9,7 @@ package br.com.trab.modelos;
  *
  * @author abreu
  */
+
 public class Usuario 
 {
     private String nome;
@@ -16,7 +17,7 @@ public class Usuario
     private String numero;
     private String telefone;
     private String cidade;
-
+    
     public Usuario()
     {
         nome = null;
