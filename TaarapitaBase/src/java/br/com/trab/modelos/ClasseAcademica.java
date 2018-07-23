@@ -15,15 +15,17 @@ public enum ClasseAcademica {
     
     private int classAcad;
     
-    ClasseAcademica(int valor)
-    {
-        classAcad = valor;
-    }
     public void setClassAcad(int novoValor)
     {
         if(!(novoValor < 0 || novoValor > 9))
             classAcad = novoValor;
     }
+    
+    ClasseAcademica(int valor)
+    {
+       setClassAcad(valor);
+    }
+    
     public int getClassAcad()
     {
         return classAcad;
