@@ -5,9 +5,12 @@
         <group>
             <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/web/index.xhtml</file>
             <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Data.java</file>
+            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/TiposAcao.java</file>
             <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/controles/UsuarioMB.java</file>
             <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Usuario.java</file>
             <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/ClasseAcademica.java</file>
+            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Atividades.java</file>
+            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Sexo.java</file>
             <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/RedeSocialExternas.java</file>
         </group>
     </open-files>

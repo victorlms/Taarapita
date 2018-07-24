@@ -13,17 +13,19 @@ package br.com.trab.modelos;
 public class Usuario 
 {
     private String nome;
+    private String sobrenome;
+    private Sexo userSexo;
     private String endereco;
-    private String numero;
-    private String telefone;
+    private String telCel;
+    private String telFixo;
     private String cidade;
     
     public Usuario()
     {
         nome = null;
         endereco = null;
-        numero = null;
-        telefone = null;
+        telCel = null;
+        telFixo = null;
         cidade = null;
     }
     public String getCidade()
@@ -34,8 +36,8 @@ public class Usuario
     {
         nome = null;
         endereco = null;
-        numero = null;
-        telefone = null;
+        telCel = null;
+        telFixo = null;
         cidade = null;
     }
     public void setCidade(String cidade) 
@@ -65,21 +67,21 @@ public class Usuario
 
     public String getNumero() 
     {
-        return numero;
+        return telCel;
     }
 
     public void setNumero(String numero)
     {
-        this.numero = numero;
+        this.telCel = numero;
     }
 
     public String getTelefone() 
     {
-        return telefone;
+        return telFixo;
     }
 
     public void setTelefone(String telefone) 
     {
-        this.telefone = telefone;
+        this.telFixo = telefone;
     }
 }

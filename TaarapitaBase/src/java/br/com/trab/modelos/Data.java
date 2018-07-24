@@ -5,6 +5,7 @@
  */
 package br.com.trab.modelos;
 
+import java.time.LocalDateTime;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
@@ -101,6 +102,28 @@ public class Data //o foco da classe é transorte de valor, sendo assim, nao hav
             this.seg = 0;
     }
     public Data(){};
+    public Data(boolean regEst, boolean regNow)
+    {
+        if (regNow)
+        {
+            LocalDateTime timeNow = LocalDateTime.now();
+            this.seg = timeNow.getSecond();
+            this.min = timeNow.getMinute();
+            this.hora = timeNow.getHour();
+            this.mes = timeNow.getMonthValue();
+            this.ano = timeNow.getYear();
+        }
+        else
+        {
+            this.seg = 0;
+            this.min = 0;
+            this.hora = 0;
+            this.mes = 0;
+            this.ano = 0;
+        }
+        this.registroEstatico = regEst;
+        ajeitandoAHora();
+    }
     public Data(boolean regEst, int seg,int min,int hora,int dia,int mes,int ano)
     {
         registroEstatico = regEst;
