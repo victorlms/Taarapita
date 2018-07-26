@@ -1,0 +1,62 @@
+body{
+	padding-top: 4ex;
+	background-color:#f5f8fa;
+}
+/*Nav*/
+.navbar-brand img{
+	height:100%;
+}
+
+/*Search Form*/
+nav form#search{
+	float:right;
+	padding: 0.5em;
+}
+
+nav form#search .glyphicon-search{
+	z-index:99;
+	position:absolute;
+	right:0.7em;
+	top:50%;
+	margin-top:-0.44em;
+
+}
+
+nav form#search .input-group .form-control:first-child{
+	border-radius: 4.25em; /*curvatura da borada de pesquisa*/
+}
+
+/*DropDown*/
+#nav-options{
+	margin:0.5em;
+}
+
+#nav-options button.thumbnail{
+	margin: 0;
+	padding: 0;
+}
+
+#nav-options img{
+	max-height: 2.3em;
+	border-radius: 0.3em;
+}
+
+/*Btn Tweet*/
+#tweet{
+	margin: 0.5em;
+}
+
+/*Custom NAv*/
+.navbar-default{
+	background-color:#56d435;/*fundo do menu*/
+}
+
+.navbar-default .navbar-nav > li > a{/*cor  dos botões*/
+	color: #fff; /*cor do texto menu*/
+}
+
+.navbar-default .navbar-nav .active > a{
+	background-color:#1b6d3a;/*Fundo destaque menu*/
+	color:#fff;/*Cor letra */
+
+}
