@@ -11,7 +11,7 @@ package br.com.trab.modelos;
  */
 public enum Sexo
 {
-    feminino("f"), masculino("m"), naoDef("nd");
+    feminino("f"), masculino("m"), outros("o"),naoDef("nd");
     
     private String defSexo;
     
@@ -25,6 +25,9 @@ public enum Sexo
             case "m":
                 this.defSexo = "m";
             break;
+            case "o":
+                this.defSexo = "o";
+                break;
             default:
                 this.defSexo = "nd";
             break;

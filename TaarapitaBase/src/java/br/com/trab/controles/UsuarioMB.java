@@ -59,8 +59,8 @@ public class UsuarioMB  implements Serializable{
     {
         if(edit == true)
             salvarUsuario();
-        else
-            usu.anulandoUsu();
+        /*else
+            usu.anulandoUsu();*/
         
         edit = false;
     }

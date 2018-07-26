@@ -3,15 +3,15 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/web/index.xhtml</file>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Data.java</file>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/TiposAcao.java</file>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/controles/UsuarioMB.java</file>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Usuario.java</file>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/ClasseAcademica.java</file>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Atividades.java</file>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Sexo.java</file>
-            <file>file:/home/abreu/Área%20de%20Trabalho/TaarapitaProjeto/trunk/TaarapitaBase/src/java/br/com/trab/modelos/RedeSocialExternas.java</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/src/java/br/com/trab/modelos/RedeSocialExternas.java</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/web/index.xhtml</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Data.java</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/src/java/br/com/trab/modelos/TiposAcao.java</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Usuario.java</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/src/java/br/com/trab/modelos/ClasseAcademica.java</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Sexo.java</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/src/java/br/com/trab/controles/UsuarioMB.java</file>
+            <file>file:/home/victor/Documentos/Taarapita/trunk/TaarapitaBase/src/java/br/com/trab/modelos/Atividades.java</file>
         </group>
     </open-files>
 </project-private>
