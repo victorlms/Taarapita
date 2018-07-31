@@ -48,15 +48,85 @@ nav form#search .input-group .form-control:first-child{
 
 /*Custom NAv*/
 .navbar-default{
-	background-color:#56d435;/*fundo do menu*/
+	background-color:#9bce4d;/*fundo do menu*/
 }
 
-.navbar-default .navbar-nav > li > a{/*cor  dos botões*/
-	color: #fff; /*cor do texto menu*/
-}
+
 
 .navbar-default .navbar-nav .active > a{
-	background-color:#1b6d3a;/*Fundo destaque menu*/
+	background-color:#22142829;/*Fundo destaque menu*/
 	color:#fff;/*Cor letra */
 
+}
+
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-nav > li> a:hover
+{/*cor  dos botões*/
+	color: #fff; /*cor da letra no menu sem o cursor*/
+	-webkit-transition:all 150em ease-in-out;
+	-moz-transition:all 150em ease-in-out;
+	-ms-transition:all 150em ease-in-out;
+	-o-transition:all 150em ease-in-out;
+	transition:all 150em ease-in-out;
+}
+
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li> a:hover{
+	background-color: transparent;
+	color: #f3f3f3;/* Cor da letra no menu com o cursor*/
+	padding-bottom: 0.62em;
+	border-bottom: 0.45em solid #f3f3f3;/*cor do sublinhado móvel*/
+}
+
+/* Badge*/
+
+.navbar-nav .badge{
+	color: #2f92ca;
+	background-color: #fff;
+	font-size: 0.7em;
+	padding: 0.27rem 0.55rem 0.2rem 0.4rem;
+	position: absolute;
+	left:0.37rem;
+	top: 0.7rem;
+	border: 0.2rem solid #2f92ca;
+	z-index: 99;
+
+}
+
+/*CArd*/
+
+.card{
+	position: relative;
+	border:0.1rem solid #e5e5e5;
+	border-radius: 0.44rem;
+	background-color: #fff
+}
+
+.card-img-top{
+	border-radius: 0.4rem 0.4rem 0 0;
+}
+
+.card-block{
+	padding: 1.25rem;
+}
+
+/*Card Profiles*/
+.card-block img.card-img{
+	top: 50%;
+	margin-top: -36px;
+	width:72px;
+	border: 3px solid #fff;
+	border-radius: 0.4rem;
+	float: left;
+	position:relative;
+	z-index:99;
+}
+
+.card-block .card-title{
+	float:left;
+	margin:0;
+	margin-left:0.5em;
+}
+.card-block .card-title small{
+	display: block;
 }
