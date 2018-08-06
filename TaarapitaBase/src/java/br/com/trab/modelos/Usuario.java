@@ -6,7 +6,7 @@
 package br.com.trab.modelos;
 
 import java.awt.Image;
-import java.awt.List;
+import java.util.List;
 import java.util.ArrayList;
 
 /**
@@ -16,25 +16,27 @@ import java.util.ArrayList;
 
 public class Usuario 
 {
-    private String idUser, nome, sobrenome, senha, email,endereco, telCel, telFixo, cidade, naturalidade,
-            nacionalidade,cep, uf, pais, instituicao, cargo;
+    public String idUser, nome, sobrenome, senha, email,endereco, cidade, 
+            naturalidade, nacionalidade, cep, uf, pais, instituicao, cargo;
+    private List<String> telCel, telFixo;
     private Image foto;//Editar depois
     private Sexo userSexo;
     private Data nascData;
     private ClasseAcademica tituloAcad;
-    private ArrayList ativUser;
+    private List<Atividades> ativUser;
     private RedeSocialExternas redeSclExt;
     
     public Usuario()
     {
-        this.ativUser = new ArrayList();
+        idUser = null;
+        this.ativUser = new ArrayList<Atividades>();
         nome = null;
         sobrenome = null;
         senha = null;
         email = null;
         endereco = null;
-        telCel = null;
-        telFixo = null;
+        telCel = new ArrayList<String>();
+        telFixo = new ArrayList<String>();
         cidade = null;
         naturalidade = null;
         nacionalidade = null;
@@ -114,13 +116,13 @@ public class Usuario
     {
         this.sobrenome = sn;
     }
-    public void setCel(String numero)
+    public void addCel(String n)
     {
-        this.telCel = numero;
+        this.telCel.add(n);
     }
-    public void setTelefone(String telefone) 
+    public void addTel(String t) 
     {
-        this.telFixo = telefone;
+        this.telFixo.add(t);
     }
     public void setUserSexo(Sexo s)
     {
@@ -136,12 +138,12 @@ public class Usuario
         this.ativUser.add(ativUser.size(), a);
     }
     
-    public ArrayList getLisAtiv()
+    public List getLisAtiv()
     {
         return this.ativUser;
     }
     
-    public String getTelefone() 
+    public List getTelefone() 
     {
         return this.telFixo;
     }
@@ -161,7 +163,7 @@ public class Usuario
     {
         return this.sobrenome;
     }
-    public String getCel() 
+    public List getCel() 
     {
         return this.telCel;
     }
@@ -193,7 +195,7 @@ public class Usuario
     {
         return this.pais;
     }
-    public String getIntuicao()
+    public String getInstituicao()
     {
         return this.instituicao;
     }

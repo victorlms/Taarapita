@@ -13,25 +13,51 @@
 <h:body>
     <h:form>
         <h:panelGrid columns="3">
+           
+            
                 <h:outputLabel value="Nome:"/>
-                <h:inputText id="nome" value="#{usuarioMB.usuario.nome}"  size="20" />
+                <h:inputText id="nome" value="#{usuarioMB.usuario.nome}" size="20" />
                 <h:message for="nome" />
+                
+                <h:outputLabel value="Sobrenome:"/>
+                <h:inputText id="Snome" value="#{usuarioMB.usuario.sobrenome}" size="20" />
+                <h:message for="Snome" />
 
+                <h:outputLabel value="Senha:"/>
+                <h:inputText id="senha" value="#{usuarioMB.usuario.senha}" size="20" />
+                <h:message for="senha" />
+                
+                <h:outputLabel value="Email:"/>
+                <h:inputText id="email" value="#{usuarioMB.usuario.email}" size="20" />
+                <h:message for="email"/>
+                
                 <h:outputLabel value="Endereço:"/>
                 <h:inputText id="end" value="#{usuarioMB.usuario.endereco}" size="20" />
                 <h:message for="end" />
-
-              <!--  <h:outputLabel value="Número:"/>
-                <h:inputText id="nro" value="#{usuarioMB.usuario.numero}" size="20" />
-                <h:message for="nro" />
-
-                <h:outputLabel value="Telefone:"/>
-                <h:inputText id="tel" value="#{usuarioMB.usuario.telefone}" size="20" />
-                <h:message for="tel" /> -->
-
+                
                 <h:outputLabel value="Cidade:"/>
-                <h:inputText id="mun" value="#{usuarioMB.usuario.cidade}" size="20" />
-                <h:message for="mun" />
+                <h:inputText id="cidade" value="#{usuarioMB.usuario.cidade}" size="20" />
+                <h:message for="cidade" />
+                
+                <h:outputLabel value="Naturalidade:"/>
+                <h:inputText id="natu" value="#{usuarioMB.usuario.naturalidade}" size="20" />
+                <h:message for="natu" />
+                
+                <h:outputLabel value="Nacionalidade:"/>
+                <h:inputText id="nacio" value="#{usuarioMB.usuario.nacionalidade}" size="20" />
+                <h:message for="nacio" />
+                
+                <h:outputLabel value="País:"/>
+                <h:inputText id="pais" value="#{usuarioMB.usuario.pais}" size="20" />
+                <h:message for="pais" />
+                
+                <h:outputLabel value="Instituicao:"/>
+                <h:inputText id="inst" value="#{usuarioMB.usuario.instituicao}" size="20" />
+                <h:message for="inst" />
+                
+                <h:outputLabel value="Cargo:"/>
+                <h:inputText id="cargo" value="#{usuarioMB.usuario.cargo}" size="20" />
+                <h:message for="cargo" />
 
                 <h:commandButton id="btnE" value="Enviar" type="submit" action="#{usuarioMB.salvarUsuario}" />
                 <h:commandButton id="btnL" value="Limpar" type="submit" action="#{usuarioMB.limparCampo}"/>
@@ -46,31 +72,83 @@
                     <f:facet name="header">
                         <h:outputText value="NOME" />
                     </f:facet>
-                    <h:outputText value="#{u.nome}"/>
+                    <h:outputText value="#{u.getNome()}"/>
                 </h:column>
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="SOBRENOME" />
+                    </f:facet>
+                    <h:outputText value="#{u.getSobrenome()}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="SENHA" />
+                    </f:facet>
+                    <h:outputText value="#{u.getSenha()}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="EMAIL" />
+                    </f:facet>
+                    <h:outputText value="#{u.getEmail()}"/>
+                </h:column>
+                
                 <h:column>
                     <f:facet name="header">
                         <h:outputText value="ENDERECO" />
                     </f:facet>
-                    <h:outputText value="#{u.endereco}"/>
+                    <h:outputText value="#{u.getEndereco()}"/>
                 </h:column>
-             <!--   <h:column>
-                    <f:facet name="header">
-                        <h:outputText value="NUMERO" />
-                    </f:facet>
-                    <h:outputText value="#{u.numero}"/>
-                </h:column>
-                <h:column>
-                    <f:facet name="header">
-                        <h:outputText value="TELEFONE" />
-                    </f:facet>
-                    <h:outputText value="#{u.telefone}"/>
-                </h:column> -->
+                
                 <h:column>
                     <f:facet name="header">
                         <h:outputText value="CIDADE" />
                     </f:facet>
-                    <h:outputText value="#{u.cidade}"/>
+                    <h:outputText value="#{u.getCidade()}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="NATURALIDADE" />
+                    </f:facet>
+                    <h:outputText value="#{u.getNaturalidade()}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="NACIONALIDADE" />
+                    </f:facet>
+                    <h:outputText value="#{u.getNacionalidade()}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="PAÍS" />
+                    </f:facet>
+                    <h:outputText value="#{u.getPais()}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="INSTITUICAO" />
+                    </f:facet>
+                    <h:outputText value="#{u.getInstituicao()}"/>
+                </h:column>
+                
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="CARGO" />
+                    </f:facet>
+                    <h:outputText value="#{u.getCargo()}"/>
+                </h:column>
+           
+                <h:column>
+                    <f:facet name="header">
+                        <h:outputText value="CIDADE" />
+                    </f:facet>
+                    <h:outputText value="#{u.getCidade()}"/>
                 </h:column>
                 <h:column>
                     <h:commandButton value="Editar" action="#{usuarioMB.editUsuario(u)}" />
