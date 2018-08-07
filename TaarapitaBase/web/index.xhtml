@@ -13,8 +13,7 @@
 <h:body>
     <h:form>
         <h:panelGrid columns="3">
-           
-            
+
                 <h:outputLabel value="Nome:"/>
                 <h:inputText id="nome" value="#{usuarioMB.usuario.nome}" size="20" />
                 <h:message for="nome" />
@@ -22,7 +21,26 @@
                 <h:outputLabel value="Sobrenome:"/>
                 <h:inputText id="Snome" value="#{usuarioMB.usuario.sobrenome}" size="20" />
                 <h:message for="Snome" />
-
+                
+                <h:outputLabel value="Sexo:"/>
+                   <h:selectOneMenu
+                        id="sex" required="true"
+                        value="#{usuarioMB.usuario.userSexo}">
+                       <f:selectItem
+                          itemValue="nd"
+                          itemLabel="Não Definir"/>
+                      <f:selectItem
+                          itemValue="f"
+                          itemLabel="Feminino"/>
+                      <f:selectItem
+                          itemValue="m"
+                          itemLabel="Masculino"/>
+                      <f:selectItem
+                          itemValue="o"
+                          itemLabel="Outros"/>
+                   </h:selectOneMenu>
+                <h:message for="sexo" />
+                
                 <h:outputLabel value="Senha:"/>
                 <h:inputText id="senha" value="#{usuarioMB.usuario.senha}" size="20" />
                 <h:message for="senha" />
@@ -34,6 +52,10 @@
                 <h:outputLabel value="Endereço:"/>
                 <h:inputText id="end" value="#{usuarioMB.usuario.endereco}" size="20" />
                 <h:message for="end" />
+                
+                <h:outputLabel value="UF:"/>
+                <h:inputText id="uf" value="#{usuarioMB.usuario.UF}" size="20" />
+                <h:message for="uf" />
                 
                 <h:outputLabel value="Cidade:"/>
                 <h:inputText id="cidade" value="#{usuarioMB.usuario.cidade}" size="20" />
@@ -54,6 +76,43 @@
                 <h:outputLabel value="Instituicao:"/>
                 <h:inputText id="inst" value="#{usuarioMB.usuario.instituicao}" size="20" />
                 <h:message for="inst" />
+                
+                <h:outputLabel value="Nivel Academico:"/>
+                   <h:selectOneMenu
+                        id="selectTituloAcad" required="true"
+                        value="#{usuarioMB.usuario.tituloAcad}">
+                       <f:selectItem
+                          itemValue="0"
+                          itemLabel="Graduando(a)"/>
+                      <f:selectItem
+                          itemValue="1"
+                          itemLabel="Graduado(a)"/>
+                      <f:selectItem
+                          itemValue="2"
+                          itemLabel="Pós-Graduando(a)"/>
+                      <f:selectItem
+                          itemValue="3"
+                          itemLabel="Pós-Graduado(a)"/>
+                       <f:selectItem
+                          itemValue="4"
+                          itemLabel="Mestrando(a)"/>
+                      <f:selectItem
+                          itemValue="5"
+                          itemLabel="Mestre(a)"/>
+                      <f:selectItem
+                          itemValue="6"
+                          itemLabel="Doutorando(a)"/>
+                      <f:selectItem
+                          itemValue="7"
+                          itemLabel="Doutor(a)"/>
+                      <f:selectItem
+                          itemValue="8"
+                          itemLabel="Pós-Doutorando(a)"/>
+                      <f:selectItem
+                          itemValue="9"
+                          itemLabel="Pós-Doutor(a)"/>
+                   </h:selectOneMenu>
+                <h:message for="nivAcad" />
                 
                 <h:outputLabel value="Cargo:"/>
                 <h:inputText id="cargo" value="#{usuarioMB.usuario.cargo}" size="20" />

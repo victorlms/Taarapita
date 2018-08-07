@@ -10,23 +10,24 @@ package br.com.trab.modelos;
  * @author abreu
  */
 public enum ClasseAcademica {
-    graduando(0), graduado(1), posGraduando(2), posGraudado(3), mestrando(4),
-    mestre(5), doutorando(6), doutor(7), posDoutorando(8),posDoutor(9);
+    graduando("0"), graduado("1"), posGraduando("2"), posGraudado("3"), mestrando("4"),
+    mestre("5"), doutorando("6"), doutor("7"), posDoutorando("8"),posDoutor("9");
     
-    private int classAcad;
+    private String classAcad;
     
-    public void setClassAcad(int novoValor)
+    public void setClassAcad(String valor)
     {
+        int novoValor = Integer.parseInt((String) valor);
         if(!(novoValor < 0 || novoValor > 9))
-            classAcad = novoValor;
+            classAcad = valor;
     }
     
-    ClasseAcademica(int valor)
+    ClasseAcademica(String valor)
     {
        setClassAcad(valor);
     }
     
-    public int getClassAcad()
+    public String getClassAcad()
     {
         return classAcad;
     }

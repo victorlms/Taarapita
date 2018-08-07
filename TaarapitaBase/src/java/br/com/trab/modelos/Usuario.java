@@ -16,19 +16,19 @@ import java.util.ArrayList;
 
 public class Usuario 
 {
-    public String idUser, nome, sobrenome, senha, email,endereco, cidade, 
-            naturalidade, nacionalidade, cep, uf, pais, instituicao, cargo;
-    private List<String> telCel, telFixo;
-    private Image foto;//Editar depois
-    private Sexo userSexo;
-    private Data nascData;
-    private ClasseAcademica tituloAcad;
-    private List<Atividades> ativUser;
-    private RedeSocialExternas redeSclExt;
+    public String nome, sobrenome, senha, email,endereco, cidade, iduser, uf,
+            naturalidade, nacionalidade, cep, pais, instituicao, cargo;
+    public List<String> telCel, telFixo;
+    public Image foto;//Editar depois
+    public Sexo userSexo;
+    public Data nascData;
+    public String tituloAcad;
+    public List<Atividades> ativUser;
+    public RedeSocialExternas redeSclExt;
     
     public Usuario()
     {
-        idUser = null;
+        iduser = null;
         this.ativUser = new ArrayList<Atividades>();
         nome = null;
         sobrenome = null;
@@ -100,9 +100,9 @@ public class Usuario
     {
         this.foto = f;
     }*/
-    public void setTituloAcad(int ta)
+    public void setTituloAcad(String ta)
     {
-        this.tituloAcad.setClassAcad(ta);
+        //this.tituloAcad.setClassAcad(ta);
     }
     public void setRedesUsu(RedeSocialExternas r)
     {   
@@ -203,40 +203,36 @@ public class Usuario
     {
         return this.cargo;
     }
-    public String getTituloAcad()/*adaptar a classe para reconhecer o sexo*/
+   public String getTituloAcad()/*adaptar a classe para reconhecer o sexo*/
     {
-        switch(this.tituloAcad.getClassAcad())
+       int temp =0;// = Integer.parseInt((String)this.tituloAcad.getClassAcad());
+        switch(temp)
         {
             case 0:
-                return "Graduando";
-            
+                return "Graduando(a)";
             case 1:
-                
-                return "Graduado";
+                return "Graduado(a)";
             case 2:
-                return "Pós-graduando";
-                
+                return "Pós-Graduando(a)";
             case 3:
-                return "Pós-Graduado";
-                
+                return "Pós-Graduado(a)";
             case 4:
-                return "Mestrando";
-                
+                return "Mestrando(a)";
             case 5:
-                return "Mestre";
+                return "Mestre(a)";
             case 6:
-                return "Doutorando";
+                return "Doutorando(a)";
             case 7:
-                return "Doutor";
+                return "Doutor(a)";
             case 8:
-                return "Pós-Doutorando";
+                return "Pós-Doutorando(a)";
             case 9:
-                return "Pós-Doutor";
+                return "Pós-Doutor(a)";
             default:
                 return "nd";
         }
     }
-    /*public getRedesSociasExt()
+   /* public getRedesSociasExt()
         ver com o Gui a melhor maneira de exibir
     
     */
